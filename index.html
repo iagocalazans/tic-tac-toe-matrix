@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <main class="main">
+
+            <div class="title">
+                <p></p>
+            </div>
+
+            <section class="frame">
+                <div class="line">
+                    <label class="container">
+                        <input type="checkbox" name="00" class="column0 line0 diagonal0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="01" class="column1 line0">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="02" class="column2 line0 diagonal1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div  class="line">
+
+                    <label class="container">
+                        <input type="checkbox" name="10" class="column0 line1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="11" class="column1 line1 diagonal0 diagonal1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="12" class="column2 line1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div  class="line">
+                    <label class="container">
+                        <input type="checkbox" name="20" class="column0 line2 diagonal1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="21" class="column1 line2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="22" class="column2 line2 diagonal0">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="line t2">
+                    <button value="Refresh Page" onClick="window.location.reload();" disabled>Reset</button>
+                </div>
+            </section>
+        </main>
+
+        <script type="text/javascript" src="js/Matrix.js"></script>
+        <script type="text/javascript" src="js/Player.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,79 @@
+.line {
+    float: left;
+    clear: left;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title p {
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+section.frame {
+    width: 162px;
+    margin: auto;
+}
+
+.t2 {
+    margin-top: 2em;
+    width: 100%;
+}
+
+button {
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* checkbox styling section */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+    float: left;
+    border: 2px solid #fff;
+    height: 50px;
+    width: 50px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container .victory:checked ~ .checkmark{
+    background-color: #0F0 !important;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .p1 ~ .checkmark:after {
+  left: 9px;
+  top: -10px;
+  position: relative;
+  content: "\d7";
+  font-size: 62px;
+}
+
+.container .p2 ~ .checkmark:after {
+    left: 5px;
+      top: -17px;
+      position: relative;
+      content: "\25cb";
+      font-size: 68px;
+}
+/* checkbox styling section */
