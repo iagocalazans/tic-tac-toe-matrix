@@ -7,7 +7,7 @@ class Player {
 
     constructor() {
         if (this.last == 0) {
-            this.turn = this.p1;
+            this.turn = ((Math.random()*1)+1).toFixed(0);
         }
     }
 
