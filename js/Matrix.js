@@ -40,8 +40,7 @@ class Matrix {
         var columns = [Array(),Array(),Array()];
 
         for (i=0;i<this.matrix.length;i++) {
-            var j=0;
-            for (j=0;j<this.matrix[i].length;j++) {
+            for (var j=0;j<this.matrix[i].length;j++) {
                 var num = this.matrix[i][j];
                 columns[j][i] = num;
             }
@@ -55,8 +54,7 @@ class Matrix {
         var k=0;
         var inline = [];
         for (i=0;i<this.matrix.length;i++) {
-            var j=0;
-            for (j=0; j<this.matrix.length; j++) {
+            for (var j=0; j<this.matrix.length; j++) {
                 inline[k++] = this.matrix[i][j];
             }
         }
@@ -77,8 +75,7 @@ class Matrix {
     validate(matrix, type) {
         for (i=0;i<matrix.length;i++) {
             var counts = [];
-            var j=0;
-            for (j=0;j<matrix[i].length;j++) {
+            for (var j=0;j<matrix[i].length;j++) {
                 var num = matrix[i][j];
                 counts[num] = counts[num] ? counts[num] + 1 : 1;
             }
