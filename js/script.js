@@ -36,3 +36,24 @@ for (i=0;i<boxes.length;i++) {
         }
     });
 }
+
+button.addEventListener('click', function(event) {
+    this.preventDefault;
+    reset();
+})
+
+function reset() {
+    for (i=0;i<boxes.length;i++) {
+        boxes[i].checked = false;
+        boxes[i].disabled = false;
+        boxes[i].classList.remove('p1');
+        boxes[i].classList.remove('p2');
+        boxes[i].classList.remove('victory');
+        button.disabled = true;
+    }
+
+    matrix = new Matrix();
+    player = new Player();
+
+    p.textContent = "It's player "+player.getTurn()+"'s turn";
+}
